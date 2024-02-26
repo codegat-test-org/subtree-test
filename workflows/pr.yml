@@ -1,0 +1,9 @@
+on:
+  pull_request:
+    branches:
+      - release-*
+jobs:
+  say-hi:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello!
